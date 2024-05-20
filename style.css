@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* To hide horizontal scroll bars */
+}
+
+/* HomePage Starts */
+
+.homepage {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: #ddd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    text-align: center;      /* Ensures text within the div is centered */
+    height: 100vh;           /* Optional: Adjusts the height of the div to full viewport height */
+    padding: 20px;           /* Adds padding inside the div */
+}
+
+.intro {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+/* HomePage Ends */
+
+/* Article Container */
+article {
+    border: 2px solid #555;
+    padding: 20px;
+    margin: 0 0;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+article header h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Summary */
+article header h5 {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+/* Content List */
+article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #c0c0c0;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+}
+
+/* Images */
+article img {
+    width: 100%;
+    /* Makes the image responsive by allowing it to scale based on the width of the article container */
+    max-width: 800px;
+    /* Limits how large the image can grow, keeping it visually appealing on larger screens */
+    height: auto;
+    /* Maintains the aspect ratio of the image */
+    display: block;
+    /* Ensures the image takes up the entire block */
+    margin: 20px auto;
+    /* Centers the image horizontally and adds space above and below */
+    border-radius: 8px;
+    /* Gives images a slightly rounded corner for a smoother look */
+    border: 3px solid #444;
+    /* Adds a subtle border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Adds a shadow for a 3D effect */
+}
+
+/* Videos */
+article video {
+    width: 100%;
+    /* Makes the video responsive by allowing it to scale based on the width of the article container */
+    max-width: 800px;
+    /* Limits how large the video can grow, keeping it visually appealing on larger screens */
+    height: auto;
+    /* Adjusts the height automatically to maintain the aspect ratio */
+    display: block;
+    /* Ensures the video takes up the entire block */
+    margin: 20px auto;
+    /* Centers the video horizontally and adds space above and below */
+    border-radius: 8px;
+    /* Gives videos a slightly rounded corner for a smoother look */
+    border: 3px solid #444;
+    /* Adds a subtle border around the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Adds a shadow for a 3D effect */
+}
+
+
+/* Horizontal Rules */
+article hr {
+    border: none;
+    border-top: 2px solid #444;
+    margin: 20px 0;
+}
+
+/* Additional Styles for General Text */
+article p,
+article li {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+
+/* Enhance List Items */
+article ul li {
+    margin-bottom: 10px;
+}
+
+
+/* About Section */
+
+
+#about {
+    border: 2px solid #555;
+    padding: 20px;
+    margin: 0 0;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#about ul li {
+    background: #333;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#about ul li:hover {
+    background: #4CAF50;
+}
+
+hr {
+    border: 1px solid #4CAF50;
+    margin-top: 20px;
+}
+
+
+/* About Section ends */
+
+
+/* Contact section starts */
+#contact {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h1 {
+    color: #ffffff;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #333;
+    color: #e0e0e0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px #4CAF50;
+}
+
+#contact input[type="submit"],
+#contact .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+#contact input[type="submit"]:hover,
+#contact .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+/* footer starts */
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #4CAF50;
+    animation: fadeIn 1.5s ease;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .social a img {
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+footer .social a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Additional keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* footer ends  */
