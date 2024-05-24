@@ -139,14 +139,6 @@ h3 {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .navbar li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-
 /* Navbar ends */
 
 /* Centered content starts */
@@ -327,7 +319,13 @@ article img {
     border-radius: 8px;
     border: 3px solid #444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 1s ease;
 }
+article img:hover {
+    /* -webkit-filter: blur(5px); */
+    transition: 1s ease;
+    }
+
 
 /* Videos */
 article video {
